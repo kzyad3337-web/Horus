@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Horus/',
+  base: process.env.GITHUB_ACTIONS ? '/Horus/' : '/',
 })
